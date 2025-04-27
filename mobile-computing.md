@@ -33,3 +33,25 @@ Transparent Communication: the mobile node continues to use its permanent IP add
 - Unstable Topology: Node mobility causes frequent route changes, making the network unstable.
 - Lower Data Rates: Wireless links often provide lower data transfer rates compared to wired connections.
 - Routing Overhead: Continuous updating of routes in a dynamic environment causes extra communication overhead.
+
+3. What are the various types of wireless transmission media? Explain two with examples.
+#### Types of Wireless Transmission Media:
+1. Radio Waves
+2. Microwaves
+3. Infrared Waves
+4. Bluetooth and Satellite Communication (special cases)
+
+#### Radio Waves:
+Radio waves are electromagnetic waves used for long-distance wireless communication.
+
+They travel easily through walls and are widely used for radio broadcasting, Wi-Fi, and mobile phones.
+
+Example: FM radio (88–108 MHz), Wi-Fi networks (2.4 GHz and 5 GHz bands).
+
+
+#### Microwaves:
+Microwaves have higher frequencies (1 GHz to 300 GHz) and are used for point-to-point communication.
+
+They require a clear line of sight and are used in satellite links and cellular networks.
+
+Example: Mobile phone communication (e.g., 4G, 5G), satellite TV.
