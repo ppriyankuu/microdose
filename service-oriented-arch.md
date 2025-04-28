@@ -1,0 +1,6 @@
+## Service Oriented Architecture
+Service-oriented architecture (SOA) is a design approach where multiple services collaborate to provide some end set of capabilities. A service here typically means a completely separate operating system process. Communication between these services occurs via calls across a network rather tan method call within a process boundary.
+
+It is an approach that aims to promote the reusability of a software; two or more end-user applications, e.g., could both use the same services. It aims to make it easier to maintain or rewrite software, as theoretically we can replace one service with another without anyone knowing, as long as the sematics of the semantics of the service don't change too much.
+
+Much of the conventionaly wisdom around SOA doesn't help you understand how to split something big into something small. It doesn't talk about how big is too big. It doesn't talk enough about real-world, practical ways to ensure that services do not become overly coupled. The number of things that go unsaid is where many of the pitfalls associated with SOA orignate.
