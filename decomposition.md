@@ -32,3 +32,14 @@ Different Scenarios and bases for decomposition:
     - simplifies understanding of the application.
     - makes it easier to scale individual functions independently.
     - allows for specialised expertise in each area.
+
+#### Other Decompositional Techniques
+Microservices offer flexibility due to their granular nature, but other decomposition methods also try to deliver similar benefits.
+**Shared Libraries**
+Shared libraries allow code reuse across teams and services, enabling better organisation. However, they have limitations: loss of technology heterogeneity, restricted independent scaling, the need to reploy entire processes for changes, and fewer opportunites to build reliency. Shared libraries are good for common, non-domain-specific code but can introduce unwanted coupling if used for service communication.
+
+**Modules**
+Same languages offer modular decomposition beyond basic libraries. OSGI (in Java) tried to provide module lifecycle management, but due to lack of native support, it often adds complexity. Erlang, however, bakes modularity into the runtime, supporting smooth upgrades and mulitple module versions. Despite these capabilities, modules still suffer the same issues as shared libraries; technology restrictions, scaling challenges, and hidden coupling risks. In practice, even well-structured modules within monoliths tend to become tightly coupled over time. Process boundaries in microservices help enforce better separation, which alone rarely achieve.
+
+**No Silver Bullet**
+Microservices are not a free solution; they bring the complexity of distributed systems. to succeed, organisations must improve deployment, testing, monitoring, and system resilience. Adopting microservices also demands understanding challenges like distributed transactions and the CAP theorem. Whether microservices fit a system depends heavily on the the specific context.
