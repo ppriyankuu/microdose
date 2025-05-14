@@ -15,3 +15,14 @@ HTTP can also be used for RPC (Remote Procedure Calls), like with SOAP, but SOAP
 2. **Shared code can be risky**: Sharing code between client and server might seem convenient, but it can lead to problems; especially in microservices, because it tightly couples them.
 
 3. **Note all frameworks support all HTTP verbs**: While verbs like GET and POST are widely supported, PUT and DELETE might need extra effort depending on the web framework. REST-specific frameworks handle this better.
+
+4. **Performance concerns**:
+    - REST over HTTP is usually more compact than SOAP (thanks to formats like JSON or binary).
+    - HTTP introduces overhead that can be problematic in systems needing low-latency.
+    - Alternatives like WebSockets (when turn into a raw TCP connection after setup) can be much faster for streaming data.
+
+5. **Not ideal for low-latency or small messages**: In server-to-server communication where performance is critical, HTTP might not be the best choice. Other protocols like UDP or specialized RPC frameworks might be better suited.
+
+6. **Payload handling can be complex**: Compared to some RPC systems that handle serializatian/deserialization automatically, REST requires more manual work. Implementing clients that can handle changes in payload structure (called tolerant readers) is difficult.
+
+Still, REST over HTTP remains a solid default for many service-to-service interactions. 
